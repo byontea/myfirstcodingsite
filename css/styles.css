@@ -1,0 +1,210 @@
+body {
+  margin: 0;
+  text-align: center;
+  /*CENTRARE GLI OGGETTI - USO PER CENTRARE TUTTA LA PAGINA*/
+  font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+  color: #40514E;
+}
+
+h1 {
+  font-family: 'Comfortaa', cursive;
+  font-size: 4rem;
+  margin-top: 55px;
+  color: #206a5d;
+}
+
+h2 {
+  line-height: 2;
+  /**SPAZIATURA LINEE**/
+  font-size: 1.5rem;
+  /*1 REM= 16PX-DINAMICA SIZE**/
+  color: #206a5d;
+  font-weight: bolder;
+  padding-bottom: 10PX;
+}
+
+h3 {
+  color: #ffc93c;
+}
+
+a {
+  color: #11999E;
+  margin: 5px;
+}
+
+a:hover {
+  color: #d2e603;
+  margin: 5px;
+}
+
+p {
+  line-height: 2;
+}
+
+hr {
+  border: dotted #EAF6F6 6px;
+  /***fare la linea a pallini*/
+  border-bottom: none;
+  /***annullare una linea di pallini che si ripetevano*/
+  width: 4%;
+  margin: 30px auto;
+  /*dimensione pallini*/
+}
+
+.pro {
+  text-decoration: underline;
+}
+
+.intro_hello {
+  width: 25%;
+  /*INSERENDO QUESTA FUNZIONE DIVENTA STORTA- SERVE PER PORTARE A CAPO IL TESTO*/
+  margin: auto;
+  /*serve per riaddrizzare il testo diventato storto dalla funzione width*/
+}
+
+.top-container {
+  background: #def3ff;
+  position: relative;
+  /****utilizzato per posizionamento**/
+  padding-top: 20px;
+  /****utilizzato per creare spazio e posizionamento**/
+}
+
+.middle-container {}
+
+.top-cloud {
+  position: absolute;
+  /****utilizzato per posizionamento**/
+  right: 400px;
+  /****utilizzato per posizionamento**/
+  top: 50px;
+  /****utilizzato per posizionalmento**/
+}
+
+.bottom-cloud {
+  position: absolute;
+  /****utilizzato per posizionalmento**/
+  left: 400px;
+  /****utilizzato per posizionalmento**/
+  bottom: 300px;
+  /****utilizzato per posizionalmento**/
+}
+
+.pinocchio {
+  width: 150px;
+  border-style: solid;
+  border-radius: 100%;
+  /****utilizzato per forma sferica immagini**/
+  background-color: #faf3dd;
+}
+
+.kimchi {
+  border-radius: 100%;
+  /****utilizzato per forma sferica immagini**/
+  border: solid #1d2d50;
+  border-width: 20px;
+  background-color: #1d2d50;
+  margin-right: 30px;
+  /****utilizzato per distaccare elemento di sopra**/
+  float: right;
+  /****utilizzato per affiancare immagine a testo**/
+  width: 20%;
+  height: 20%;
+}
+
+.giphy-embed {
+  margin-right: 30px;
+  border-radius: 100%;
+  border: solid #1d2d50;
+  border-width: 20px;
+  background-color: #1d2d50;
+  width: 20%;
+  float: left;
+  /***direzione testo**- NON USARE PER POSIZIONARE/
+  margin-right: 30px; /**spazio tra immagine e testo**/
+}
+
+.skill-row {
+  margin: 50px auto 100px auto;
+  /*utilizzato per riaddrizzare il contenuto - DOMANDA SI POTEVA USARE DISPLAY INLINE BLOCKBOX??*/
+  width: 40%;
+  text-align: left;
+  /***direzione testo**/
+  line-height: 3;
+}
+
+.contact-message {
+  width: 40%;
+  margin: 40px auto 60px;
+  /*tre elemenit 41pxTOP+ AUTO destra e sinistra 60px per Bottom*/
+}
+
+/*.code-skill {
+  clear: left;  /**** SERVE PER ANTI FLOAT proprieta**/
+.middle-container {
+  margin: 100px 0;
+  /*creazione spazio*/
+}
+
+.bottom-container {
+  background-color: #66BFBF;
+  padding: 50px 0px 40px;
+  /*utilizzato per ingrandire il quadrante del footer*/
+}
+
+.montagna {
+  width: 30%;
+}
+
+.btn {
+  background: #f6f7d4;
+  background-image: -webkit-linear-gradient(top, #f6f7d4, #f6f7d4);
+  background-image: -moz-linear-gradient(top, #f6f7d4, #f6f7d4);
+  background-image: -ms-linear-gradient(top, #f6f7d4, #f6f7d4);
+  background-image: -o-linear-gradient(top, #f6f7d4, #f6f7d4);
+  background-image: linear-gradient(to bottom, #f6f7d4, #f6f7d4);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: Arial;
+  color: #000000;
+  font-size: 25px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #2e8f87;
+  background-image: -webkit-linear-gradient(top, #2e8f87, #2e8f87);
+  background-image: -moz-linear-gradient(top, #2e8f87, #2e8f87);
+  background-image: -ms-linear-gradient(top, #2e8f87, #2e8f87);
+  background-image: -o-linear-gradient(top, #2e8f87, #2e8f87);
+  background-image: linear-gradient(to bottom, #2e8f87, #2e8f87);
+  text-decoration: none;
+}
+
+/*display INLINE-BLOCK--mette i blocchi nello stesso livello*** position relative
+  serve per aggiungere margine all oggett, position absolute aggiunge margine al PARENTE**/
+/**
+.box1 {
+  background-color: red;
+  height: 200px;
+  width: 200px;
+  display: inline-block;
+}
+
+.box2{
+  background-color: blue;
+  height: 200px;
+  width: 200px;
+  display: inline-block;
+  position:relative;
+}
+.box3{
+  background-color: yellow;
+  height: 200px;
+  width: 200px;
+  display: inline-block;
+  position:relative;
+}
+*/
